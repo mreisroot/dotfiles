@@ -1,0 +1,6 @@
+#!/bin/sh
+#exec w3m "duckduckgo.com/lite?kd=-1&kp=-1&q=$*"
+exec ly "https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=$*" # 🦆
+#exec ly "duckduckgo.com/lite?q=$*" # 🦆
+#exec ly "duckduckgo.com/lite?q=$*"
+
