@@ -1,0 +1,48 @@
+!! Colorscheme
+
+! special
+*.foreground: #ffffff
+*.background: #000000
+*.cursorColor: #ffffff
+
+! black
+*.color0: #000000
+*.color8: #000000
+
+! red
+*.color1: #f62217
+*.color9: #f62217
+
+! green
+*.color2: #00f900
+*.color10: #00f900
+
+! yellow
+*.color3: #ffff00
+*.color11: #ffff00
+
+! blue
+*.color4: #00ffff
+*.color12: #00ffff
+
+!! URxvt Appearance
+URxvt.font: xft:mono:pixelsize=20:antialias=true
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 400x400
+URxvt.internalBorder: 4
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+!! URxvt Functions
+URxvt.keysym.Shift-Control-v: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+urxvt.perl-ext-common: default,resize-font
+URxvt.keysym.C-j: resize-font:smaller
+URxvt.keysym.C-k: resize-font:bigger
+URxvt.keysym.C-equal: resize-font:reset
