@@ -1,6 +1,0 @@
-#!/bin/sh
-
-mkdir "${HOME}/.config" 2> /dev/null
-mkdir "${HOME}/.config/zathura" 2> /dev/null
-
-ln -sf "${PWD}/zathurarc" "${HOME}/.config/zathura/zathurarc"
