@@ -40,8 +40,8 @@ URxvt.depth: 24
 URxvt.iso14755: false
 
 !! URxvt Functions
-URxvt.keysym.Shift-Control-v: eval:paste_clipboard
-URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
 urxvt.perl-ext-common: default,resize-font
 URxvt.keysym.C-j: resize-font:smaller
 URxvt.keysym.C-k: resize-font:bigger
