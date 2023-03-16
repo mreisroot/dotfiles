@@ -1,6 +1,6 @@
 #!/bin/sh
 
-slstatus &
+dwmblocks &
 unclutter -idle 3 &
 xrdb .Xresources
 exec dwm
