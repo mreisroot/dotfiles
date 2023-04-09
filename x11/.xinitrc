@@ -1,6 +1,5 @@
 #!/bin/sh
 
-dwmblocks &
-unclutter -idle 3 &
+i3status &
 xrdb .Xresources
-exec dwm
+exec i3
