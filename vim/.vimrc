@@ -49,12 +49,12 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'hashivim/vim-terraform'
+" Plug 'fatih/vim-go'
 Plug 'lervag/vimtex'
 
 call plug#end()
 
 
-set nu!
 set mouse=a
 set title
 set cursorline
