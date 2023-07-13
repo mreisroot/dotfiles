@@ -116,6 +116,9 @@ autocmd BufWritePost *.go :w | !go fmt %
 " Format Terraform files automatically
 autocmd BufWritePost *.tf :w | !terraform fmt 
 
+" Format Packer files automatically
+autocmd BufWritePost *.pkr.hcl :w | !packer fmt %
+
 " VimTeX configuration
 
 " Viewer options: One may configure the viewer either by specifying a built-in
