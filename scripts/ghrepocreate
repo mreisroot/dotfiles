@@ -1,0 +1,19 @@
+#!/bin/sh
+
+printf "Choose a name for the GitHub repository: "
+read -r reponame
+
+printf "Type a description for the GitHub repository: "
+read -r description
+
+printf "Visibility of the repository (public|private): "
+read -r visibility
+
+if [ "${visibility}" = "public" ];
+then
+  visflag="--public"
+else
+  visflag="--private"
+fi
+
+gh repo create "${visflag}" --description "${description}" "${reponame}"

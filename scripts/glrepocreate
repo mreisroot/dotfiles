@@ -1,0 +1,20 @@
+#!/bin/sh
+
+printf "Choose a name for the GitLab repository: "
+read -r reponame
+
+printf "Type a description for the GitLab repository: "
+read -r description
+
+printf "Visibility of the repository (public|private): "
+read -r visibility
+
+if [ "${visibility}" = "public" ];
+then
+  visflag="--public"
+else
+  visflag="--private"
+fi
+
+printf "\n"
+glab repo create "${visflag}" --description "${description}" "${reponame}"
